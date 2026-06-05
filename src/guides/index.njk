@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+title: Guides
+permalink: /guides/
+---
+
+<h1>Guides</h1>
+
+<ul>
+  {% for guide in collections.guides %}
+    <li>
+      <a href="{{ guide.url }}">{{ guide.data.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+``
