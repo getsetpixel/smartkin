@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/sitemap.xml");
 
   return {
+    pathPrefix: "/smartkin/",
     dir: {
       input: "src",
       includes: "_includes",
